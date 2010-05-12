@@ -24,7 +24,7 @@ $last_name = $data["last_name"] = $user_details[0]["last_name"];
 }
 
 $mysqli = mysqli_connect ("localhost", "username", "password", "database");
-$sql = "INSERT INTO emails (email_address, first_name, last_name) VALUES ('$emails', '$first_name', '$last_name')";
+$sql = "INSERT INTO [[YOUR TABLE]] (email_address, first_name, last_name) VALUES ('$emails', '$first_name', '$last_name')";
 $res = mysqli_query($mysqli, $sql);
 
 mysqli_close($mysqli);
